@@ -14,10 +14,10 @@ app.use('/', (req, res) => {
 
 sequelize.sync()
 .then(() => {
-console.log("DB Successfully synced");
+console.log("Datatabse Successfully synced");
 })
 .catch((err) => {
-    console.log(`DB failed to sync. Err: ${err.message}`);
+    console.log(`Database failed to sync. Err: ${err.message}`);
 })
 
 const PORT = process.env.PORT || 9000;
